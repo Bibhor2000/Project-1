@@ -5,6 +5,8 @@ body {
 .guesses {
     background-color: lightsteelblue;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 200px;
     height: 375px;
     margin-top: -300px;
@@ -24,4 +26,10 @@ body {
     width: 700px;
     height: 175px;
     margin: 0 auto;
+}
+
+.sub-guesses {
+    background-color: white;
+    width: 45px;
+    height: 45px;
 }
