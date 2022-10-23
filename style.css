@@ -1,11 +1,27 @@
+body {
+    background-color: slategrey;
+}
+
 .guesses {
-    background-color: white;
+    background-color: lightsteelblue;
+    display: flex;
+    width: 200px;
+    height: 375px;
+    margin-top: -300px;
 }
 
 .display {
-    background-color: white;
+    background-color: lightsteelblue;
+    display: flex;
+    width: 700px;
+    height: 300px;
+    margin: 0 auto;
 }
 
 .input {
-    background-color: white;
+    background-color: lightsteelblue;
+    display: flex;
+    width: 700px;
+    height: 175px;
+    margin: 0 auto;
 }
