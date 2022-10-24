@@ -36,15 +36,33 @@ const subInput = {
     inputFour: document.querySelector('#fourth'),
     inputFive: document.querySelector('#fifth'),
     inputDisplay: function() {
-        
+        word = this.storage[Math.floor(Math.random() * this.storage.length)]
+        wordDisplay = subDisplay.display
+        if (word === 'Order') {
+            wordDisplay.innerText = this.prompts.prompt1
+        } else if (word === 'Carry') {
+            wordDisplay.innerText = this.prompts.prompt2
+        } else if (word === 'Water') {
+            wordDisplay.innerText = this.prompts.prompt3
+        } else if (word === 'Motor') {
+            wordDisplay.innerText = this.prompts.prompt4
+        } else if (word === 'Array') {
+            wordDisplay.innerText = this.prompts.prompt5
+        } 
     }
 }
 
-//Event listeners
-inputButton = subInput.generator;
-inputButton.addEventListener('click', event => {
+//Event listeners & Query Assigning
+const generator = document.querySelector('#generator')
+generator.addEventListener('click', event => {
     event.preventDefault()
-});
+    subInput.inputDisplay()
+})
+
+const submit = document.querySelector('#submit')
+submit.addEventListener('click', event => {
+    event.preventDefault()
+})
 
 
 //Code Storage
@@ -52,3 +70,9 @@ inputButton.addEventListener('click', event => {
         //word = this.storage[Math.floor(Math.random() * this.storage.length)]
         //splitWord = word.split('')
         //this.inputOne.innerText = splitWord[3]
+
+//This function prevents certain keys from being pressed
+//function alphaOnly(event) {
+    //var key = event.keyCode;
+    //return ((key >= 65 && key <= 90) || key == 8);
+//};
