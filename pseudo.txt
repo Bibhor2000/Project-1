@@ -1,0 +1,21 @@
+Create spaces in the site for the word the player has to guess, letters the player
+has already guessed, and whether they have won or lost
+
+Make storage for the words that will be guessed by the player
+
+Make functionality that will get a random word out of the storage 
+and display only some letters of that word
+
+Make functionality for the spaces to display the letters regarding the word that has
+to be guessed, and guessed letters
+
+Make conditions that displays whether or not the player has guessed
+the correct letter
+
+Make conditions where if the player has guessed incorrectly, displays
+the remaining guesses
+
+Make conditions that will decide if the player has won or lost the game
+
+Make functionality for the spaces to display whether or not the game has 
+been won or lost
