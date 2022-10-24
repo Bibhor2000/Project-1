@@ -2,7 +2,7 @@ body {
     background-color: slategrey;
 }
 
-.guesses {
+.guesses-container {
     background-color: lightsteelblue;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@ body {
     margin-top: -300px;
 }
 
-.display {
+.display-container {
     background-color: lightsteelblue;
     display: flex;
     width: 700px;
@@ -20,7 +20,7 @@ body {
     margin: 0 auto;
 }
 
-.input {
+.input-container {
     background-color: lightsteelblue;
     display: flex;
     width: 700px;
