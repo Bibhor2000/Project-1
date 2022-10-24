@@ -1,1 +1,3 @@
+Reference for figuring out how to separate a string by each character:
 https://www.w3schools.com/jsref/jsref_slice_string.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split#examples

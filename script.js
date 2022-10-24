@@ -20,7 +20,14 @@ const subGuesses = {
 
 //subInput Assigning Object
 const subInput = {
-    storage: ['Order', 'Carry', 'Fight', 'Start', 'Drink'],
+    storage: ['Order', 'Carry', 'Water', 'Motor', 'Array'],
+    prompts: {
+        prompt1: 'What do you do when you are at a restaurant?',
+        prompt2: 'How do you move an item from one place to another?',
+        prompt3: 'How do you quench your thirst?',
+        prompt4: 'What is one component electric vehicles have?',
+        prompt5: 'What do we use in coding to store multiple things?'
+    },
     generator: document.querySelector('#generator'),
     input: document.querySelector('.sub-input'),
     inputOne: document.querySelector('#first'),
@@ -29,10 +36,7 @@ const subInput = {
     inputFour: document.querySelector('#fourth'),
     inputFive: document.querySelector('#fifth'),
     inputDisplay: function() {
-        this.input = ''
-        word = this.storage[Math.floor(Math.random() * this.storage.length)]
-        splitWord = word.split('')
-        this.inputOne.innerText = splitWord[3]
+        
     }
 }
 
@@ -40,5 +44,11 @@ const subInput = {
 inputButton = subInput.generator;
 inputButton.addEventListener('click', event => {
     event.preventDefault()
-    subInput.inputDisplay()
 });
+
+
+//Code Storage
+//this.input = ''
+        //word = this.storage[Math.floor(Math.random() * this.storage.length)]
+        //splitWord = word.split('')
+        //this.inputOne.innerText = splitWord[3]
