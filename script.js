@@ -77,13 +77,28 @@ submit.addEventListener('click', event => {
         alert('You are correct!')
     } else if (playerInput === 'Array' && wordDisplay === promptOutput.prompt5) {
         alert('You are correct!')
-    } else {
+    } else if (playerInput !== 'Order' && wordDisplay === promptOutput.prompt1) {
+        alert('Wrong! Try Again')
+    } else if (playerInput !== 'Carry' && wordDisplay === promptOutput.prompt2) {
+        alert('Wrong! Try Again')
+    } else if (playerInput !== 'Water' && wordDisplay === promptOutput.prompt3) {
+        alert('Wrong! Try Again')
+    } else if (playerInput !== 'Motor' && wordDisplay === promptOutput.prompt4) {
+        alert('Wrong! Try Again')
+    } else if (playerInput !== 'Array' && wordDisplay === promptOutput.prompt5) {
         alert('Wrong! Try Again')
     }
-    //console.log(playerInput)
-    //console.log(wordDisplay)
-    //console.log(promptOutput)
 })
+
+
+
+//notes for tracking incoming thoughts & getting back on track
+//For the else if statements that involve an alert for an incorrect answer
+//Call the letter display function within the brackets of those conditions
+//For the letter display function, assign variables to catch the incorrect inputs
+//Then have those incorrect inputs display in the divs within the display object
+//The amount of divs represent the amount of guesses remaining, there are eight
+//When all eight divs are filled with letters, then game over
 
 
 
