@@ -98,7 +98,7 @@ submit.addEventListener('click', event => {
 //For the letter display function, assign variables to catch the incorrect inputs
 //Then have those incorrect inputs display in the divs within the display object
 //The amount of divs represent the amount of guesses remaining, there are eight
-//When all eight divs are filled with letters, then game over
+//When all eight divs are filled with letters, then the game is over
 
 
 
