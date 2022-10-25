@@ -62,15 +62,27 @@ generator.addEventListener('click', event => {
 const submit = document.querySelector('#submit')
 submit.addEventListener('click', event => {
     event.preventDefault()
-    playerInput = `${subInput.inputOne}${subInput.inputTwo}${subInput.inputThree}${subInput.inputFour}${subInput.inputFive}`
-    answer = subDisplay.display.value
-
-    if (playerInput === answer) {
+    playerInputs = [`${subInput.inputOne.innerText}`, `${subInput.inputTwo.innerText}, ${subInput.inputThree.innerText}, ${subInput.inputFour.innerText}, ${subInput.inputFive.innerText}`]
+    playerInput = playerInputs.join('')
+    wordDisplay = subDisplay.display.innerText
+    promptOutput = subInput.prompts
+    
+    if (playerInput === 'Order' && wordDisplay === promptOutput.prompt1) {
+        alert('You are correct!')
+    } else if (playerInput === 'Carry' && wordDisplay === promptOutput.prompt2) {
+        alert('You are correct!')
+    } else if (playerInput === 'Water' && wordDisplay === promptOutput.prompt3) {
+        alert('You are correct!')
+    } else if (playerInput === 'Motor' && wordDisplay === promptOutput.prompt4) {
+        alert('You are correct!')
+    } else if (playerInput === 'Array' && wordDisplay === promptOutput.prompt5) {
         alert('You are correct!')
     } else {
-        alert('Wrong! Try again')
-        
+        alert('Wrong! Try Again')
     }
+    //console.log(playerInput)
+    //console.log(wordDisplay)
+    //console.log(promptOutput)
 })
 
 //notes

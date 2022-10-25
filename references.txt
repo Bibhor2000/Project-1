@@ -2,6 +2,10 @@ Reference for figuring out how to separate a string by each character:
 https://www.w3schools.com/jsref/jsref_slice_string.asp
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split#examples
 
-Reference for making a div behave like an input element
+Reference for making a div behave like an input element: (Not using this approach anymore but still made a good reference)
 http://jsfiddle.net/MRP5M/12/
 https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable
+
+Reference for joining strings together:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+https://www.samanthaming.com/tidbits/15-4-ways-to-combine-strings/
