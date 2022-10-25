@@ -62,7 +62,21 @@ generator.addEventListener('click', event => {
 const submit = document.querySelector('#submit')
 submit.addEventListener('click', event => {
     event.preventDefault()
+    playerInput = `${subInput.inputOne}${subInput.inputTwo}${subInput.inputThree}${subInput.inputFour}${subInput.inputFive}`
+    answer = subDisplay.display.value
+
+    if (playerInput === answer) {
+        alert('You are correct!')
+    } else {
+        alert('Wrong! Try again')
+        
+    }
 })
+
+//notes
+//for the else statement in the submit button have a function that will take any
+//incorrect letters and add them to the divs in the guesses display and deduct
+//the remaining guesses.
 
 
 //Code Storage
