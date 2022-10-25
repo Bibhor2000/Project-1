@@ -14,7 +14,39 @@ const subGuesses = {
     guessSeven: document.querySelector('#seven'),
     guessEight: document.querySelector('#eight'),
     letterDisplay: function() {
+        let inputs = [`${subInput.inputOne.value}`, `${subInput.inputTwo.value}`, `${subInput.inputThree.value}`, `${subInput.inputFour.value}`, `${subInput.inputFive.value}`]
+        let input = playerInputs.join('')
+        let words = subInput.storage
+        promptDisplay = subDisplay.display.innerText
+        promptOutput = subInput.prompts
+        if (promptDisplay === promptOutput.prompt1) {
+            let word = words[0]
+            if (word.substring(0, 1) === input.substring(0, 1) || word.substring(1, 2) === input.substring(1, 2) || word.substring(2, 3) === input.substring(2, 3) || word.substring(3, 4) === input.substring(3, 4) || word.substring(4, 5) === input.substring(4, 5)) {
 
+            } else if (word.substring(0, 1) !== input.substring(0, 1)) {
+                this.guessOne.innerText = input.substring(0, 1)
+            } else if (word.substring(1, 2) !== input.substring(1, 2)) {
+                this.guessTwo.innerText = input.substring(1, 2)
+            } else if (word.substring(2, 3) !== input.substring(2, 3)) {
+                this.guessThree.innerText = input.substring(2, 3)
+            } else if (word.substring(3, 4) !== input.substring(3, 4)) {
+                this.guessFour.innerText = input.substring(3, 4)
+            } else if (word.substring(4, 5) !== input.substring(4, 5)) {
+                this.guessFive.innerText = input.substring(4, 5)
+            }
+        } else if (promptDisplay === promptOutput.prompt2) {
+            let word = words[1]
+            
+        } else if (promptDisplay === promptOutput.prompt3) {
+            let word = words[2]
+            
+        } else if (promptDisplay === promptOutput.prompt4) {
+            let word = words[3]
+            
+        } else if (promptDisplay ===  promptOutput.prompt5) {
+            let word = words[4]
+            
+        }
     }
 }
 
@@ -29,7 +61,6 @@ const subInput = {
         prompt5: 'What do we use in coding to store multiple things?'
     },
     generator: document.querySelector('#generator'),
-    input: document.querySelector('.sub-input'),
     inputOne: document.querySelector('#first'),
     inputTwo: document.querySelector('#second'),
     inputThree: document.querySelector('#third'),
@@ -37,17 +68,17 @@ const subInput = {
     inputFive: document.querySelector('#fifth'),
     inputDisplay: function() {
         word = this.storage[Math.floor(Math.random() * this.storage.length)]
-        wordDisplay = subDisplay.display
+        promptDisplay = subDisplay.display
         if (word === 'Order') {
-            wordDisplay.innerText = this.prompts.prompt1
+            promptDisplay.innerText = this.prompts.prompt1
         } else if (word === 'Carry') {
-            wordDisplay.innerText = this.prompts.prompt2
+            promptDisplay.innerText = this.prompts.prompt2
         } else if (word === 'Water') {
-            wordDisplay.innerText = this.prompts.prompt3
+            promptDisplay.innerText = this.prompts.prompt3
         } else if (word === 'Motor') {
-            wordDisplay.innerText = this.prompts.prompt4
+            promptDisplay.innerText = this.prompts.prompt4
         } else if (word === 'Array') {
-            wordDisplay.innerText = this.prompts.prompt5
+            promptDisplay.innerText = this.prompts.prompt5
         } 
     }
 }
@@ -64,35 +95,40 @@ submit.addEventListener('click', event => {
     event.preventDefault()
     playerInputs = [`${subInput.inputOne.value}`, `${subInput.inputTwo.value}`, `${subInput.inputThree.value}`, `${subInput.inputFour.value}`, `${subInput.inputFive.value}`]
     playerInput = playerInputs.join('')
-    wordDisplay = subDisplay.display.innerText
+    promptDisplay = subDisplay.display.innerText
     promptOutput = subInput.prompts
     
-    if (playerInput === 'Order' && wordDisplay === promptOutput.prompt1) {
+    if (playerInput === 'Order' && promptDisplay === promptOutput.prompt1) {
         alert('You are correct!')
-    } else if (playerInput === 'Carry' && wordDisplay === promptOutput.prompt2) {
+    } else if (playerInput === 'Carry' && promptDisplay === promptOutput.prompt2) {
         alert('You are correct!')
-    } else if (playerInput === 'Water' && wordDisplay === promptOutput.prompt3) {
+    } else if (playerInput === 'Water' && promptDisplay === promptOutput.prompt3) {
         alert('You are correct!')
-    } else if (playerInput === 'Motor' && wordDisplay === promptOutput.prompt4) {
+    } else if (playerInput === 'Motor' && promptDisplay === promptOutput.prompt4) {
         alert('You are correct!')
-    } else if (playerInput === 'Array' && wordDisplay === promptOutput.prompt5) {
+    } else if (playerInput === 'Array' && promptDisplay === promptOutput.prompt5) {
         alert('You are correct!')
-    } else if (playerInput !== 'Order' && wordDisplay === promptOutput.prompt1) {
+    } else if (playerInput !== 'Order' && promptDisplay === promptOutput.prompt1) {
         alert('Wrong! Try Again')
-    } else if (playerInput !== 'Carry' && wordDisplay === promptOutput.prompt2) {
+        subGuesses.letterDisplay()
+    } else if (playerInput !== 'Carry' && promptDisplay === promptOutput.prompt2) {
         alert('Wrong! Try Again')
-    } else if (playerInput !== 'Water' && wordDisplay === promptOutput.prompt3) {
+        subGuesses.letterDisplay()
+    } else if (playerInput !== 'Water' && promptDisplay === promptOutput.prompt3) {
         alert('Wrong! Try Again')
-    } else if (playerInput !== 'Motor' && wordDisplay === promptOutput.prompt4) {
+        subGuesses.letterDisplay()
+    } else if (playerInput !== 'Motor' && promptDisplay === promptOutput.prompt4) {
         alert('Wrong! Try Again')
-    } else if (playerInput !== 'Array' && wordDisplay === promptOutput.prompt5) {
+        subGuesses.letterDisplay()
+    } else if (playerInput !== 'Array' && promptDisplay === promptOutput.prompt5) {
         alert('Wrong! Try Again')
+        subGuesses.letterDisplay()
     }
 })
 
 
 
-//notes for tracking incoming thoughts & getting back on track
+//notes for tracking incoming thoughts & getting back on track (using substring)
 //For the else if statements that involve an alert for an incorrect answer
 //Call the letter display function within the brackets of those conditions
 //For the letter display function, assign variables to catch the incorrect inputs

@@ -9,3 +9,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contentedita
 Reference for joining strings together:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 https://www.samanthaming.com/tidbits/15-4-ways-to-combine-strings/
+
+Reference for taking a character from a string and displaying it:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring#examples
+https://stackoverflow.com/questions/23819858/javascript-compare-two-strings-skip-character-which-is-different
+https://stackoverflow.com/questions/69279756/compare-two-string-and-return-the-unmatched-value-using-javascript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while#examples
