@@ -1,6 +1,10 @@
 //subDisplay Assigning Object
 const subDisplay = {
     display: document.querySelector('.sub-display'),
+    images: document.querySelector('.images'),
+    imageDisplay: function() {
+
+    }
 }
 
 //subGuesses Assigning Object
