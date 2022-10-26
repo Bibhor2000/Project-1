@@ -97,7 +97,9 @@ const subGuesses = {
         }
     },
     guessesLeft: function() {
-        
+        guessesAmount = 3
+        guessesText = `Guesses left: ${guessesAmount}`
+        this.guesses.innerText = guessesText
     }
 }
 
@@ -162,18 +164,23 @@ submit.addEventListener('click', event => {
     } else if (playerInput !== 'Order' && promptDisplay === promptOutput.prompt1) {
         alert('Wrong! Try Again')
         subGuesses.letterDisplay()
+        subGuesses.guessesLeft()
     } else if (playerInput !== 'Carry' && promptDisplay === promptOutput.prompt2) {
         alert('Wrong! Try Again')
         subGuesses.letterDisplay()
+        subGuesses.guessesLeft()
     } else if (playerInput !== 'Water' && promptDisplay === promptOutput.prompt3) {
         alert('Wrong! Try Again')
         subGuesses.letterDisplay()
+        subGuesses.guessesLeft()
     } else if (playerInput !== 'Motor' && promptDisplay === promptOutput.prompt4) {
         alert('Wrong! Try Again')
         subGuesses.letterDisplay()
+        subGuesses.guessesLeft()
     } else if (playerInput !== 'Array' && promptDisplay === promptOutput.prompt5) {
         alert('Wrong! Try Again')
         subGuesses.letterDisplay()
+        subGuesses.guessesLeft()
     }
 })
 
