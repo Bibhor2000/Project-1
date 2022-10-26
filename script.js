@@ -11,6 +11,7 @@ const subGuesses = {
     guessFour: document.querySelector('#four'),
     guessFive: document.querySelector('#five'),
     guesses: document.querySelector('.guesses'),
+    guessesAmount: 5,
     letterDisplay: function() {
         let inputs = [`${subInput.inputOne.value}`, `${subInput.inputTwo.value}`, `${subInput.inputThree.value}`, `${subInput.inputFour.value}`, `${subInput.inputFive.value}`]
         let input = playerInputs.join('')
@@ -96,9 +97,9 @@ const subGuesses = {
             }
         }
     },
-    guessesLeft: function() {
-        guessesAmount = 3
-        guessesText = `Guesses left: ${guessesAmount}`
+    guessesLeft: function() {     
+        this.guessesAmount--
+        guessesText = `Guesses left: ${this.guessesAmount}`
         this.guesses.innerText = guessesText
     }
 }
