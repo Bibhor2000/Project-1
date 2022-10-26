@@ -1,7 +1,7 @@
 //subDisplay Assigning Object
 const subDisplay = {
     display: document.querySelector('.sub-display'),
-    images: document.querySelector('.images'),
+    images: document.getElementsByClassName('.images'),
     imageDisplay: function() {
 
     }
