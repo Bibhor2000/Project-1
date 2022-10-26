@@ -1,9 +1,10 @@
 //subDisplay Assigning Object
 const subDisplay = {
     display: document.querySelector('.sub-display'),
-    images: document.getElementsByClassName('.images'),
+    images: document.getElementsByClassName('images'),
     imageDisplay: function() {
-
+        let currentImg = 0
+        let nextImg = 0
     }
 }
 
