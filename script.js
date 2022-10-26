@@ -101,6 +101,9 @@ const subGuesses = {
         this.guessesAmount--
         guessesText = `Guesses left: ${this.guessesAmount}`
         this.guesses.innerText = guessesText
+        if (this.guessesAmount === 0) {
+            alert('Game Over!!!')
+        }
     }
 }
 
