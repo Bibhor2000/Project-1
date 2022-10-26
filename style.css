@@ -1,9 +1,8 @@
 body {
-    background-color: slategrey;
+    background-image: url('./images/world.jpeg');
 }
 
 .guesses-container {
-    background-color: lightsteelblue;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -13,7 +12,6 @@ body {
 }
 
 .display-container {
-    background-color: lightsteelblue;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -23,7 +21,6 @@ body {
 }
 
 .input-container {
-    background-color: lightsteelblue;
     display: flex;
     width: 700px;
     height: 175px;
@@ -31,7 +28,7 @@ body {
 }
 
 .sub-guesses {
-    background-color: white;
+    background-color: #FFDD00;
     width: 50px;
     height: 50px;
     margin: 10px;
@@ -41,7 +38,7 @@ body {
 }
 
 .guesses {
-    background-color: white;
+    background-color: #FFDD00;
     width: 140px;
     height: 35px;
     margin: 10px;
@@ -51,6 +48,7 @@ body {
 }
 
 .sub-input {
+    background-color: #FFDD00;
     width: 110px;
     height: 110px;
     margin: 10px;
@@ -61,16 +59,15 @@ body {
 
 
 .sub-display {
-    background-color: white;
     height: 120px;
     width: 300px;
     margin: 0 auto;
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 35px;
 }
 
 .img-container {
-    background-color: white;
+    background-color: #FFDD00;
     height: 150px;
     width: 575px;
     margin: 0 auto;
@@ -102,4 +99,12 @@ body {
 
 #img6 {
     display: none;
+}
+
+#generator {
+    background-color: #FFDD00;
+}
+
+#submit {
+    background-color: #FFDD00;
 }
