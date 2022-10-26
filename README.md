@@ -5,6 +5,7 @@ A variation of the spaceman game
 - Javascript
 - HTML
 - CSS
+- CDN fonts
 
 ## User Stories
 - As a player, I want to have to guess different words not the same one
