@@ -3,8 +3,8 @@ const subDisplay = {
     display: document.querySelector('.sub-display'),
     images: document.getElementsByClassName('images'),
     imageDisplay: function() {
-        let currentImg = 0
-        let nextImg = 0
+        let currentImg = this.images[0]
+        currentImg++
     }
 }
 
@@ -173,6 +173,7 @@ submit.addEventListener('click', event => {
         alert('Wrong! Try Again')
         subGuesses.letterDisplay()
         subGuesses.guessesLeft()
+        subDisplay.imageDisplay()
     } else if (playerInput !== 'Carry' && promptDisplay === promptOutput.prompt2) {
         alert('Wrong! Try Again')
         subGuesses.letterDisplay()
@@ -181,14 +182,17 @@ submit.addEventListener('click', event => {
         alert('Wrong! Try Again')
         subGuesses.letterDisplay()
         subGuesses.guessesLeft()
+        subDisplay.imageDisplay()
     } else if (playerInput !== 'Motor' && promptDisplay === promptOutput.prompt4) {
         alert('Wrong! Try Again')
         subGuesses.letterDisplay()
         subGuesses.guessesLeft()
+        subDisplay.imageDisplay()
     } else if (playerInput !== 'Array' && promptDisplay === promptOutput.prompt5) {
         alert('Wrong! Try Again')
         subGuesses.letterDisplay()
         subGuesses.guessesLeft()
+        subDisplay.imageDisplay()
     }
 })
 
