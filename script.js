@@ -10,9 +10,7 @@ const subGuesses = {
     guessThree: document.querySelector('#three'),
     guessFour: document.querySelector('#four'),
     guessFive: document.querySelector('#five'),
-    guessSix: document.querySelector('#six'),
-    guessSeven: document.querySelector('#seven'),
-    guessEight: document.querySelector('#eight'),
+    guesses: document.querySelector('.guesses'),
     letterDisplay: function() {
         let inputs = [`${subInput.inputOne.value}`, `${subInput.inputTwo.value}`, `${subInput.inputThree.value}`, `${subInput.inputFour.value}`, `${subInput.inputFive.value}`]
         let input = playerInputs.join('')
@@ -20,12 +18,9 @@ const subGuesses = {
         let incorrectWords = [];
         promptDisplay = subDisplay.display.innerText
         promptOutput = subInput.prompts
-        console.log(promptDisplay)
-        console.log(promptOutput.prompt1)
-        this.guessOne.innerText = 'a'
+
         if (promptDisplay === promptOutput.prompt1) {
             let word = words[0]
-            console.log(input);
             if (word.substring(0, 1) === input.substring(0, 1) || word.substring(1, 2) === input.substring(1, 2) || word.substring(2, 3) === input.substring(2, 3) || word.substring(3, 4) === input.substring(3, 4) || word.substring(4, 5) === input.substring(4, 5)) {
 
             } if (word.substring(0, 1) !== input.substring(0, 1)) {
@@ -100,6 +95,9 @@ const subGuesses = {
                 this.guessFive.innerText = input.substring(4, 5)
             }
         }
+    },
+    guessesLeft: function() {
+        
     }
 }
 
@@ -180,14 +178,3 @@ submit.addEventListener('click', event => {
 })
 
 
-//Code Storage
-//this.input = ''
-        //word = this.storage[Math.floor(Math.random() * this.storage.length)]
-        //splitWord = word.split('')
-        //this.inputOne.innerText = splitWord[3]
-
-//This function prevents certain keys from being pressed
-//function alphaOnly(event) {
-    //var key = event.keyCode;
-    //return ((key >= 65 && key <= 90) || key == 8);
-//};
