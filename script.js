@@ -20,7 +20,6 @@ const subGuesses = {
         let inputs = [`${subInput.inputOne.value}`, `${subInput.inputTwo.value}`, `${subInput.inputThree.value}`, `${subInput.inputFour.value}`, `${subInput.inputFive.value}`]
         let input = playerInputs.join('')
         let words = subInput.storage
-        let incorrectWords = [];
         promptDisplay = subDisplay.display.innerText
         promptOutput = subInput.prompts
 
