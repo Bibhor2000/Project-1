@@ -37,6 +37,7 @@ body {
     margin-left: 28px;
     font-size: 35px;
     border-radius: 10px;
+    font-family: 'New Super Mario Font U', sans-serif;
 }
 
 .guesses {
@@ -47,8 +48,9 @@ body {
     margin: 10px;
     margin-top: 20px;
     margin-left: 28px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
+    font-family: 'New Super Mario Font U', sans-serif;
 }
 
 .sub-input {
@@ -60,6 +62,7 @@ body {
     margin-top: 25px;
     font-size: 90px; 
     border-radius: 25px;
+    font-family: 'New Super Mario Font U', sans-serif;
 }
 
 
@@ -71,8 +74,9 @@ body {
     width: 300px;
     margin: 0 auto;
     margin-top: 0px;
-    font-size: 35px;
+    font-size: 30px;
     border-radius: 15px;
+    font-family: 'New Super Mario Font U', sans-serif;
 }
 
 .img-container {
@@ -116,10 +120,12 @@ body {
     background-color: #FFDD00;
     color: whitesmoke;
     border-radius: 15px;
+    font-family: 'New Super Mario Font U', sans-serif;                                      
 }
 
 #submit {
     background-color: #FFDD00;
     color: whitesmoke;
     border-radius: 15px;
+    font-family: 'New Super Mario Font U', sans-serif;                                          
 }
