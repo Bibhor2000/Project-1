@@ -1,15 +1,16 @@
-//subDisplay Assigning Object
+//subDisplay Assigning Object & Global Variable
+let imageIndex = 0;
 const subDisplay = {
     display: document.querySelector('.sub-display'),
     img: document.getElementsByClassName('images'),
     imageDisplay: function() {
+        let i;
         let images = this.img
-        let imageIndex = 0
-        let i 
         for (i = 0; i < images.length; i++) {
             images[i].style.display = 'none'
         }
         imageIndex++
+        console.log(i);
         if (imageIndex > images.length) {
             imageIndex = 1
         }
@@ -187,6 +188,7 @@ submit.addEventListener('click', event => {
         alert('Wrong! Try Again')
         subGuesses.letterDisplay()
         subGuesses.guessesLeft()
+        subDisplay.imageDisplay()
     } else if (playerInput !== 'Water' && promptDisplay === promptOutput.prompt3) {
         alert('Wrong! Try Again')
         subGuesses.letterDisplay()
