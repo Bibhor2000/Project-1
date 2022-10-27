@@ -18,4 +18,4 @@ the remaining guesses
 Make conditions that will decide if the player has won or lost the game
 
 Make functionality for the spaces to display whether or not the game has 
-been won or lost.
+been won or lost
