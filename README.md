@@ -19,7 +19,7 @@ A variation of the spaceman game
 <img width="518" alt="Screen Shot 2022-10-21 at 3 24 33 PM" src="https://media.git.generalassemb.ly/user/45902/files/74d07b04-ad84-4910-9b2a-4e0c58d2d1ad">
 
 ## App Screenshot
-
+<img width="1211" alt="Screen Shot 2022-10-27 at 11 45 35 AM" src="https://user-images.githubusercontent.com/108837222/198337104-8dffe8d4-b6bb-4d31-9d24-646c98a95ff9.png">
 
 ## Problems during the project
 - Figuring out the structure of javascript logic (Eventually decided to have everything stored in objects)
