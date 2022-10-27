@@ -1,10 +1,19 @@
 //subDisplay Assigning Object
 const subDisplay = {
     display: document.querySelector('.sub-display'),
-    images: document.getElementsByClassName('images'),
+    img: document.getElementsByClassName('images'),
     imageDisplay: function() {
-        let currentImg = this.images[0]
-        currentImg++
+        let images = this.img
+        let imageIndex = 0
+        let i 
+        for (i = 0; i < images.length; i++) {
+            images[i].style.display = 'none'
+        }
+        imageIndex++
+        if (imageIndex > images.length) {
+            imageIndex = 1
+        }
+        images[imageIndex-1].style.display = 'block'
     }
 }
 
